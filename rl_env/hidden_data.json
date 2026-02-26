@@ -1,0 +1,17 @@
+[
+  {
+    "source": "Rwanda is a landlocked country in East Africa.",
+    "good_summary": "Rwanda is a landlocked country located in East Africa.",
+    "bad_summary": "Rwanda is a coastal country in West Africa."
+  },
+  {
+    "source": "Machine learning models require large amounts of data for training.",
+    "good_summary": "Machine learning models need large datasets to train effectively.",
+    "bad_summary": "Machine learning models do not require data."
+  },
+  {
+    "source": "Convex optimization guarantees global minima under certain conditions.",
+    "good_summary": "Under certain conditions, convex optimization ensures a global minimum.",
+    "bad_summary": "Convex optimization always finds local maxima."
+  }
+]

@@ -1,0 +1,22 @@
+You are tasked with implementing a reward function for evaluating summaries.
+
+Create a file named reward.py that defines:
+
+    compute_reward(source: str, candidate: str) -> float
+
+Requirements:
+
+1. The function must return a float between 0.0 and 1.0.
+2. Higher scores should reward:
+   - Factual consistency with the source.
+   - Coverage of key information.
+   - Conciseness.
+3. Lower scores should penalize:
+   - Hallucinated content.
+   - Logical contradictions.
+   - Excessive verbosity.
+
+The evaluation will be performed on hidden validation data.
+
+Do not hard-code expected outputs.
+Returning a constant value will result in failure.
