@@ -10,7 +10,7 @@ The environment is designed to prevent reward hacking and ensure robust evaluati
 
 
 ## Environment Structure
-
+```
 rl_env/
 ├── prompt.txt
 ├── hidden_data.json
