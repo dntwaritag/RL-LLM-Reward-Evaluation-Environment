@@ -8,11 +8,9 @@ The objective is to evaluate whether a candidate reward function correctly assig
 
 The environment is designed to prevent reward hacking and ensure robust evaluation under adversarial conditions.
 
----
 
 ## Environment Structure
 
-```
 rl_env/
 ├── prompt.txt
 ├── hidden_data.json
@@ -30,7 +28,6 @@ rl_env/
 * `run_env.py` runs the environment.
 * `requirements.txt` defines dependencies.
 
----
 
 ## Task Definition
 
@@ -50,7 +47,6 @@ The function must:
 
 The hidden validation set ensures generalization and prevents memorization-based solutions.
 
----
 
 ## Judge Design
 
@@ -65,7 +61,6 @@ The judge performs the following:
 
 The scoring logic enforces ranking correctness rather than absolute value thresholds to discourage trivial solutions.
 
----
 
 ## Anti-Reward-Hacking Safeguards
 
@@ -78,7 +73,6 @@ This environment mitigates common reward hacking strategies:
 
 The judge evaluates relative ordering, not isolated cases, ensuring robustness.
 
----
 
 ## Design Philosophy
 
@@ -93,7 +87,6 @@ The environment emphasizes:
 
 It mirrors evaluation-driven ML system design and reward modeling reliability practices.
 
----
 
 ## Running the Environment
 
@@ -111,8 +104,6 @@ python run_env.py
 
 The script outputs a continuous score between 0.0 and 1.0.
 
----
-
 ## Future Extensions
 
 Potential extensions include:
@@ -121,7 +112,5 @@ Potential extensions include:
 * Multi-objective reward balancing
 * Gradient-based reward validation
 * Tool-augmented evaluation agents
-
----
 
 This implementation demonstrates the construction of a practical RL environment, the reliability of reward modelling, and the robustness of evaluation for LLM training workflows.
