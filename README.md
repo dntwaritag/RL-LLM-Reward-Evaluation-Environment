@@ -11,14 +11,19 @@ The environment is designed to prevent reward hacking and ensure robust evaluati
 
 ## Environment Structure
 ```
-rl_env/
-├── prompt.txt
-├── hidden_data.json
-├── candidate_outputs.json
-├── reward.py          # Implemented by LLM
-├── judge.py           # Evaluation logic
-├── run_env.py
-└── requirements.txt
+RL-LLM-Reward-Evaluation-Environment/
+│
+├── rl_env/
+│   ├── .gitignore
+│   ├── prompt.txt
+│   ├── hidden_data.json
+│   ├── candidate_outputs.json
+│   ├── requirements.txt
+│   ├── reward.py
+│   ├── judge.py
+│   └── run_env.py
+│
+└── README.md
 ```
 
 * `prompt.txt` defines the task specification.
